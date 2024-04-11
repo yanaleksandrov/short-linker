@@ -1,0 +1,15 @@
+.short-linker {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+.short-linker-label {
+    grid-area: span 1 / span 2;
+}
+.short-linker-label.half {
+    grid-area: span 1 / span 1;
+}
+.short-linker-url {
+    display: block;
+    width: 100%;
+}

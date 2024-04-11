@@ -1,0 +1,80 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: starter-ru_RU\n"
+"POT-Creation-Date: 2024-04-11 17:19+0300\n"
+"PO-Revision-Date: 2022-11-09 11:09+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: ;_e;__;_n_noop;_n;_nx;_x:1,2c;esc_html__;esc_html_e;"
+"_n:1,2;_nx:1,2,4c;esc_attr_e;esc_attr__\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: assets\n"
+
+#: includes/CPT.php:30 includes/CPT.php:32
+msgid "Short Links"
+msgstr ""
+
+#: includes/CPT.php:33
+msgid "Short Link"
+msgstr ""
+
+#: includes/Management.php:39
+msgid "Page URL"
+msgstr ""
+
+#: includes/Management.php:40
+msgid "Full Link"
+msgstr ""
+
+#: includes/Management.php:41
+msgid "View Count"
+msgstr ""
+
+#: includes/Management.php:42
+msgid "Repeat Viewing"
+msgstr ""
+
+#: includes/Metabox.php:34
+msgid "Link info"
+msgstr ""
+
+#: includes/Metabox.php:54
+msgid "Redirect to:"
+msgstr ""
+
+#: includes/Metabox.php:56
+msgid "Write valid URL"
+msgstr ""
+
+#: includes/Metabox.php:60
+msgid "View Count:"
+msgstr ""
+
+#: includes/Metabox.php:65
+msgid "Repeat Viewing:"
+msgstr ""
+
+#: short-linker.php:63
+#, php-format
+msgid "For %1$s plugin to work are required minimum versions: %2$s %3$s"
+msgstr ""
+
+#: short-linker.php:96
+#, php-format
+msgid "PHP - %1$s (you are using %2$s version)"
+msgstr ""
+
+#: short-linker.php:102
+#, php-format
+msgid "WordPress - %1$s (you are using %2$s version)"
+msgstr ""

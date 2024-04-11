@@ -1,0 +1,73 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: short-linker-ru_RU\n"
+"POT-Creation-Date: 2024-04-11 17:24+0300\n"
+"PO-Revision-Date: 2024-04-11 17:25+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: ;_e;__;_n_noop;_n;_nx;_x:1,2c;esc_html__;esc_html_e;"
+"_n:1,2;_nx:1,2,4c;esc_attr_e;esc_attr__\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: assets\n"
+"X-Poedit-SearchPathExcluded-1: vendor\n"
+
+#: includes/CPT.php:30 includes/CPT.php:32
+msgid "Short Links"
+msgstr "Короткие ссылки"
+
+#: includes/CPT.php:33
+msgid "Short Link"
+msgstr "Короткая ссылка"
+
+#: includes/Management.php:39
+msgid "Page URL"
+msgstr "URL страницы"
+
+#: includes/Management.php:40
+msgid "Full Link"
+msgstr "Полная ссылка"
+
+#: includes/Management.php:41 includes/Metabox.php:60
+msgid "View Count"
+msgstr "Количество просмотров"
+
+#: includes/Management.php:42 includes/Metabox.php:65
+msgid "Repeat Viewing"
+msgstr "Повторные просмотры"
+
+#: includes/Metabox.php:34
+msgid "Link info"
+msgstr "Данные ссылки"
+
+#: includes/Metabox.php:54
+msgid "Redirect to:"
+msgstr "Перенаправить на:"
+
+#: includes/Metabox.php:56
+msgid "Write valid URL"
+msgstr "Напишите валидный URL"
+
+#: short-linker.php:63
+#, php-format
+msgid "For %1$s plugin to work are required minimum versions: %2$s %3$s"
+msgstr "Для работы плагина %1$s требуются минимальные версии: %2$s %3$s"
+
+#: short-linker.php:96
+#, php-format
+msgid "PHP - %1$s (you are using %2$s version)"
+msgstr "PHP - %1$s (вы используете версию %2$s)"
+
+#: short-linker.php:102
+#, php-format
+msgid "WordPress - %1$s (you are using %2$s version)"
+msgstr "WordPress - %1$s (вы используете версию %2$s)"
