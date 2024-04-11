@@ -24,6 +24,8 @@ class Management {
 		add_filter( "manage_{$post_type}_posts_columns", array( $this, 'add_new_columns' ) );
 		add_filter( "manage_edit-{$post_type}_sortable_columns", array( $this, 'add_sortable_columns' ) );
 		add_filter( "manage_{$post_type}_posts_custom_column", array( $this, 'fill_new_columns' ), 10, 2 );
+
+		add_filter( 'request', array( $this, 'make_sortable_columns' ) );
 	}
 
 	/**
@@ -84,5 +86,20 @@ class Management {
 				break;
 		}
 		echo wp_kses_post( $value );
+	}
+
+	/**
+	 * Make columns sortable
+	 *
+	 * @param array $vars Query params.
+	 * @return mixed
+	 */
+	public function make_sortable_columns( $vars ) {
+		$orderby = sanitize_text_field( $vars['orderby'] ?? '' );
+		if ( in_array( $orderby, array( 'general-views', 'unique-views' ), true ) ) {
+			$vars['meta_key'] = $orderby; // phpcs:ignore
+			$vars['orderby']  = 'meta_value_num';
+		}
+		return $vars;
 	}
 }
