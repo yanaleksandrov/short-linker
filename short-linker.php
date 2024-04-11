@@ -147,15 +147,15 @@ if ( ! class_exists( 'Short_Linker' ) ) {
 			$last_click_is_outdated = ( $current_click_time - $last_click_time ) > Constants::SHORT_LINKER_SESSION_DURATION_SECONDS;
 
 			if ( $redirect_link && filter_var( $redirect_link, FILTER_VALIDATE_URL ) !== false ) {
-				if ( ! $last_click_is_outdated ) {
-					$view_repeat = absint( get_post_meta( $post_id, 'view-repeat', true ) );
-					$view_repeat = ++$view_repeat;
-					update_post_meta( $post_id, 'view-repeat', $view_repeat );
+				if ( $last_click_is_outdated ) {
+					$unique_views = absint( get_post_meta( $post_id, 'unique-views', true ) );
+					$unique_views = ++$unique_views;
+					update_post_meta( $post_id, 'unique-views', $unique_views );
 				}
 
-				$view_count = absint( get_post_meta( $post_id, 'view-count', true ) );
-				$view_count = ++$view_count;
-				update_post_meta( $post_id, 'view-count', $view_count );
+				$general_views = absint( get_post_meta( $post_id, 'general-views', true ) );
+				$general_views = ++$general_views;
+				update_post_meta( $post_id, 'general-views', $general_views );
 
 				$_SESSION[ $session_key ] = time();
 			} else {

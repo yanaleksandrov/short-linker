@@ -1,25 +1,22 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: short-linker-ru_RU\n"
-"POT-Creation-Date: 2024-04-11 17:24+0300\n"
-"PO-Revision-Date: 2024-04-11 17:25+0300\n"
+"Project-Id-Version: starter-ru_RU\n"
+"POT-Creation-Date: 2024-04-11 18:10+0300\n"
+"PO-Revision-Date: 2024-04-11 18:11+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 "X-Generator: Poedit 3.4.2\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-KeywordsList: ;_e;__;_n_noop;_n;_nx;_x:1,2c;esc_html__;esc_html_e;"
-"_n:1,2;_nx:1,2,4c;esc_attr_e;esc_attr__\n"
+"X-Poedit-KeywordsList: ;_e;__;_n_noop;_n;_nx;_x:1,2c;esc_html__;esc_html_e;_n:1,2;_nx:1,2,4c;esc_attr_e;esc_attr__\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: assets\n"
-"X-Poedit-SearchPathExcluded-1: vendor\n"
 
 #: includes/CPT.php:30 includes/CPT.php:32
 msgid "Short Links"
@@ -38,12 +35,12 @@ msgid "Full Link"
 msgstr "Полная ссылка"
 
 #: includes/Management.php:41 includes/Metabox.php:60
-msgid "View Count"
-msgstr "Количество просмотров"
+msgid "General views"
+msgstr "Общие просмотры"
 
 #: includes/Management.php:42 includes/Metabox.php:65
-msgid "Repeat Viewing"
-msgstr "Повторные просмотры"
+msgid "Unique views"
+msgstr "Уникальные просмотры"
 
 #: includes/Metabox.php:34
 msgid "Link info"

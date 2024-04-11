@@ -46,8 +46,8 @@ class Metabox {
 	public function render_link_meta_box() {
 		$post_id       = get_the_ID();
 		$redirect_link = sanitize_text_field( get_post_meta( $post_id, 'redirect-link', true ) );
-		$view_count    = absint( get_post_meta( $post_id, 'view-count', true ) );
-		$view_repeat   = absint( get_post_meta( $post_id, 'view-repeat', true ) );
+		$general_views = absint( get_post_meta( $post_id, 'general-views', true ) );
+		$unique_views  = absint( get_post_meta( $post_id, 'unique-views', true ) );
 		?>
 		<div class="short-linker">
 			<label class="short-linker-label">
@@ -57,13 +57,13 @@ class Metabox {
 			</label>
 
 			<label class="short-linker-label half">
-				<?php esc_html_e( 'View Count', 'short-linker' ); ?>:
-				<strong><?php echo wp_kses_post( $view_count ); ?></strong>
+				<?php esc_html_e( 'General views', 'short-linker' ); ?>:
+				<strong><?php echo wp_kses_post( $general_views ); ?></strong>
 			</label>
 
 			<label class="short-linker-label half">
-				<?php esc_html_e( 'Repeat Viewing', 'short-linker' ); ?>:
-				<strong><?php echo wp_kses_post( $view_repeat ); ?></strong>
+				<?php esc_html_e( 'Unique views', 'short-linker' ); ?>:
+				<strong><?php echo wp_kses_post( $unique_views ); ?></strong>
 			</label>
 		</div>
 		<?php

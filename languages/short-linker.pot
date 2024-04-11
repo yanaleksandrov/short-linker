@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: starter-ru_RU\n"
-"POT-Creation-Date: 2024-04-11 17:19+0300\n"
+"POT-Creation-Date: 2024-04-11 18:10+0300\n"
 "PO-Revision-Date: 2022-11-09 11:09+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -36,12 +36,12 @@ msgstr ""
 msgid "Full Link"
 msgstr ""
 
-#: includes/Management.php:41
-msgid "View Count"
+#: includes/Management.php:41 includes/Metabox.php:60
+msgid "General views"
 msgstr ""
 
-#: includes/Management.php:42
-msgid "Repeat Viewing"
+#: includes/Management.php:42 includes/Metabox.php:65
+msgid "Unique views"
 msgstr ""
 
 #: includes/Metabox.php:34
@@ -54,14 +54,6 @@ msgstr ""
 
 #: includes/Metabox.php:56
 msgid "Write valid URL"
-msgstr ""
-
-#: includes/Metabox.php:60
-msgid "View Count:"
-msgstr ""
-
-#: includes/Metabox.php:65
-msgid "Repeat Viewing:"
 msgstr ""
 
 #: short-linker.php:63

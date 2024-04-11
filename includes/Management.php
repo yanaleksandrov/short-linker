@@ -36,10 +36,10 @@ class Management {
 		$post_columns = array_merge(
 			$post_columns,
 			array(
-				'url'          => esc_html__( 'Page URL', 'short-linker' ),
-				'redirect-url' => esc_html__( 'Full Link', 'short-linker' ),
-				'view-count'   => esc_html__( 'View Count', 'short-linker' ),
-				'view-repeat'  => esc_html__( 'Repeat Viewing', 'short-linker' ),
+				'url'           => esc_html__( 'Page URL', 'short-linker' ),
+				'redirect-url'  => esc_html__( 'Full Link', 'short-linker' ),
+				'general-views' => esc_html__( 'General views', 'short-linker' ),
+				'unique-views'  => esc_html__( 'Unique views', 'short-linker' ),
 			)
 		);
 
@@ -53,8 +53,8 @@ class Management {
 	 * @return array
 	 */
 	public function add_sortable_columns( $sortable_columns ) {
-		$sortable_columns['view-count']  = array( 'view-count', false );
-		$sortable_columns['view-repeat'] = array( 'view-repeat', false );
+		$sortable_columns['general-views'] = array( 'general-views', false );
+		$sortable_columns['unique-views']  = array( 'unique-views', false );
 
 		return $sortable_columns;
 	}
@@ -76,11 +76,11 @@ class Management {
 				$redirect_link = esc_attr( get_post_meta( $post_id, 'redirect-link', true ) );
 				$value         = sprintf( '<a href="%s" target="_blank">%s</a>', $redirect_link, $redirect_link );
 				break;
-			case 'view-count':
-				$value = absint( get_post_meta( $post_id, 'view-count', true ) );
+			case 'general-views':
+				$value = absint( get_post_meta( $post_id, 'general-views', true ) );
 				break;
-			case 'view-repeat':
-				$value = absint( get_post_meta( $post_id, 'view-repeat', true ) );
+			case 'unique-views':
+				$value = absint( get_post_meta( $post_id, 'unique-views', true ) );
 				break;
 		}
 		echo wp_kses_post( $value );
